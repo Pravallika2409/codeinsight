@@ -1,0 +1,34 @@
+# --- Phase 1 (in use now) ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+email-validator==2.2.0
+python-dotenv==1.0.1
+pyflakes==3.4.0
+
+# --- Phase 2 (in use now) ---
+# javac (Java) and node+eslint (JavaScript) are external tools, not pip
+# packages -- see README "Installation" for how to set those up.
+javalang==0.13.0
+
+# --- Phase 3 (in use now) ---
+sqlalchemy==2.0.35
+alembic==1.13.2
+psycopg2-binary==2.9.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+# passlib 1.7.4 probes bcrypt.__about__.__version__, which bcrypt>=4.1 removed;
+# without this pin, password hashing fails outright (not just a warning).
+bcrypt==4.0.1
+python-multipart==0.0.9
+
+# --- Phase 4 (in use now) ---
+anthropic==1.3.0
+
+# --- Phase 5 (in use now) ---
+redis==5.0.8
+celery==5.4.0
+
+# --- Phase 6 (in use now) ---
+httpx==0.27.2
